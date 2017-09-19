@@ -26,5 +26,15 @@ namespace FLP.UnitTest01
             Personne pers2 = new Personne("Ben", 21);
             Personne pers3 = new Personne("Ben", 21, ListofMovie1, ListofMovie2, ListofMovie1);
         }
+
+        [TestMethod]
+        public void TestClassSerialisation()
+        {
+            Personne pers = new Personne("Ben2", 21);
+
+            Serialize.SerializeLibrary(pers);
+            Serialize.DeSerializeLibrary();
+
+        }
     }
 }

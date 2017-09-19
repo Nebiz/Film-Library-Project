@@ -33,6 +33,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(76, 56);
+            this.tabControl1.Location = new System.Drawing.Point(72, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(678, 485);
@@ -88,13 +89,24 @@
             this.tabPage4.Text = "Non Intéressés";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(273, 534);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(270, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 602);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Film Library Project";
+            this.Name = "Form1";
             this.Text = "Film Library Project";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -108,6 +120,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button1;
     }
 }
 
