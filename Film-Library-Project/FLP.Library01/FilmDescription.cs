@@ -10,16 +10,29 @@ namespace FLP.Library01
     public class FilmDescription
     {
         public string Name { get; set; }
-        public int Date { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public string ImgPath { get; set; }
+        public List<Actor> ListActor { get; set; }
+        public string Realisateur { get; set; }
 
         public FilmDescription ()
         {
         }
 
-        public FilmDescription(string name, int date)
+        // A supprimer / garder seulement pour le test deja cree
+        public FilmDescription(string name, DateTime releaseDate)
         {
             Name = name;
-            Date = date;
+            ReleaseDate = releaseDate;
+        }
+
+        public FilmDescription(string name, DateTime releasedate, string imgPath, List<Actor> listActor, string realisteur)
+        {
+            Name = name;
+            ReleaseDate = releasedate;
+            ImgPath = imgPath;
+            ListActor = listActor;
+            Realisateur = realisteur;
         }
     }
 }

@@ -15,8 +15,8 @@ namespace FLP.UnitTest01
             List<FilmDescription> ListofMovie2 = new List<FilmDescription>();
 
             FilmDescription film1 = new FilmDescription();
-            FilmDescription film2 = new FilmDescription("Alien vs Predator", 2001);
-            FilmDescription film3 = new FilmDescription("Alien vs Predator 2", 2007);
+            FilmDescription film2 = new FilmDescription("Alien vs Predator", DateTime.Today);
+            FilmDescription film3 = new FilmDescription("Alien vs Predator 2", DateTime.Today);
 
             ListofMovie2.Add(film1);
             ListofMovie2.Add(film2);
@@ -30,7 +30,7 @@ namespace FLP.UnitTest01
         [TestMethod]
         public void TestClassSerialisation()
         {
-            Personne pers = new Personne("Ben2", 21);
+            Personne pers = new Personne("Ben", 21);
 
             Serialize.SerializeLibrary(pers);
             Serialize.DeSerializeLibrary();
