@@ -1,25 +1,38 @@
-﻿window.onload = function () {
+﻿var bird;
 
-    canv = document.getElementById("myFlappy");
+function setup() {
+    canv =  //document.getElementBy("myFlappy");
     ctx = canv.getContext("2d");
-    
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, canv.width, canv.height);
 
-    //var bird = new Bird(canv, ctx);
-    //bird.show();
-
-    ctx.fillStyle = "white";
-    ctx.fillRect(canv.width / 4, (canv.height / 2) - 12, 24, 24);
-
+    //bird = new Bird();
+    alert("yo");
+    //var bird = new Bird();
+    alert("yo2");
 }
 
-//function Bird(canv, ctx) {
-//    this.y = height / 2;
-//    this.x = width / 3;
+function draw()
+{
+    //Create();
+    bird.update();
+    bird.show();
+    alert("yo3");
+}
 
-//    this.show = function () {
-//        ctx.fillStyle = "white";
-//        ctx.fillRect(canv.width / 3, canv.height / 2, 25, 25);
-//    }
-//}
+function Bird() {
+    this.x = width / 4;
+    this.y = (height / 2) - 12;
+    this.gravity = 0.1;
+    this.velocity = 15;
+
+    this.show = function () {
+        fillStyle = "white";
+        fillRect(this.x, this.y, 24, 24);
+    }
+
+    this.update = function () {
+        this.y += this.velocity;
+        this.velocity += this.gravity;
+    }
+}

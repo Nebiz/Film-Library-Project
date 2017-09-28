@@ -76,6 +76,9 @@
     <Content Include="IMG\maxresdefault3.jpg" />
     <Content Include="IMG\searchicon.png" />
     <Content Include="JS\Flappy.js" />
+    <Content Include="JS\Flappy\p5.dom.js" />
+    <Content Include="JS\Flappy\p5.js" />
+    <Content Include="JS\Flappy\p5.sound.js" />
     <Content Include="JS\JS-Gen.js" />
     <Content Include="packages.config" />
     <Content Include="HTML-enTrop\package.json" />
