@@ -10,7 +10,7 @@
     <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Bootstrap Theme The Band</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -25,11 +25,70 @@
     <!-- <title>Thumbnail Gallery - Start Bootstrap Template</title> -->
 
     <!-- Custom styles for this template -->
-    <link href="css/thumbnail-gallery.css" rel="stylesheet" />
+    <link href="CSS/thumbnail-gallery.css" rel="stylesheet" />
 
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div style="height:1500px;width:1200px;">
+        <iframe src="https://www.w3schools.com"></iframe>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <div class="inner">
+                    <nav class="nav nav-masthead">
+                        <a class="nav-link" id="login" onclick="hello3()">Log In</a>
+                        <a class="nav-link" id="register" onclick="hello4()">Register</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h1>Modal Footer</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        function hello() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks the button, open the modal
+        function hello2() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <div class="site-wrapper">
 
@@ -39,11 +98,11 @@
 
                 <div class="masthead clearfix">
                     <div class="inner">
-                        <h3 class="masthead-brand">Cover</h3>
+                        <h2 class="masthead-brand">Film Library Project</h2>
                         <nav class="nav nav-masthead">
-                            <a class="nav-link active" href="#">Home</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" id="login" onclick="hello()">Log In  </a>
+                            <a class="nav-link" id="register" onclick="hello2()">Register  </a>
+                            <input type="text" name="search" placeholder="Search..2">
                         </nav>
                     </div>
                 </div>
@@ -98,14 +157,10 @@
 
                     <!-- a -->
                     <p class="lead">
-                        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
                     </p>
                 </div>
 
                 <div class="mastfoot">
-                    <div class="inner">
-                        <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-                    </div>
                 </div>
 
             </div>
@@ -328,22 +383,7 @@
         </div>
     </div>
 
-    <!-- Add Google Maps -->
-    <div id="googleMap"></div>
-    <script>
-        function myMap() {
-            var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-            var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            var marker = new google.maps.Marker({ position: myCenter });
-            marker.setMap(map);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-    <!--
-    To use this code on your website, get a free API key from Google.
-    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-    -->
+    
     <!-- Footer -->
     <footer class="text-center">
         <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
@@ -394,6 +434,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/JS-Gen.js"></script>
 
 </body>
 </html>

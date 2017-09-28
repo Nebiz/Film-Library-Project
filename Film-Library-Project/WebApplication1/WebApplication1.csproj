@@ -69,8 +69,16 @@
     <Content Include="CSS\cover.css" />
     <Content Include="CSS\General.css" />
     <Content Include="CSS\thumbnail-gallery.css" />
+    <Content Include="Flappy.html" />
     <Content Include="HTML-enTrop\HtmlPage1.html" />
+    <Content Include="IMG\maxresdefault1.jpg" />
+    <Content Include="IMG\maxresdefault2.jpg" />
+    <Content Include="IMG\maxresdefault3.jpg" />
+    <Content Include="IMG\searchicon.png" />
+    <Content Include="JS\Flappy.js" />
+    <Content Include="JS\JS-Gen.js" />
     <Content Include="packages.config" />
+    <Content Include="HTML-enTrop\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -80,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.html" />
+    <Content Include="Snake.html" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -97,10 +106,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IMG\" />
-    <Folder Include="JS\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
